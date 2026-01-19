@@ -1,0 +1,48 @@
+{
+  "name": "sample_eval_dataset",
+  "description": "Sample evaluation dataset for testing the RAG system",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "query": "What is retrieval-augmented generation?",
+      "relevant_chunk_ids": ["chunk_001", "chunk_002"],
+      "relevance_scores": {
+        "chunk_001": 1.0,
+        "chunk_002": 0.8,
+        "chunk_003": 0.3
+      },
+      "expected_answer": "Retrieval-augmented generation (RAG) is a technique that combines retrieval systems with language models to generate more accurate and grounded responses.",
+      "metadata": {
+        "difficulty": "easy",
+        "topic": "rag_basics"
+      }
+    },
+    {
+      "query": "How does BM25 ranking work?",
+      "relevant_chunk_ids": ["chunk_010", "chunk_011"],
+      "relevance_scores": {
+        "chunk_010": 1.0,
+        "chunk_011": 0.9
+      },
+      "expected_answer": "BM25 is a ranking function that scores documents based on term frequency and inverse document frequency.",
+      "metadata": {
+        "difficulty": "medium",
+        "topic": "retrieval"
+      }
+    },
+    {
+      "query": "What are the benefits of hybrid search?",
+      "relevant_chunk_ids": ["chunk_020", "chunk_021", "chunk_022"],
+      "relevance_scores": {
+        "chunk_020": 1.0,
+        "chunk_021": 0.9,
+        "chunk_022": 0.7
+      },
+      "expected_answer": "Hybrid search combines semantic (vector) search with lexical (keyword) search to leverage the strengths of both approaches.",
+      "metadata": {
+        "difficulty": "medium",
+        "topic": "retrieval"
+      }
+    }
+  ]
+}
