@@ -22,7 +22,7 @@ flowchart TB
         API[FastAPI Application]
         INGEST[POST /ingest]
         QUERY[POST /query]
-        DOCS[GET /docs/{id}]
+        DOCS["GET /docs/:id"]
     end
 
     subgraph "Ingestion Pipeline"
